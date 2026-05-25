@@ -1,0 +1,5 @@
+#incluir<portugues.lang>
+
+funcao principal()
+    escreva("Olá, mundo!")
+fimfuncao

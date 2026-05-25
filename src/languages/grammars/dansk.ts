@@ -1,0 +1,24 @@
+import { Language } from "../grammar.class.js";
+import { mergeGrammar } from "../grammar.merge.js";
+import { DocStr } from "../utils/stucture.grammar.js";
+
+export const dansk = new Language(
+  mergeGrammar({
+    language: "dansk",
+    about:
+      "ENIDE er en oversaettelig transpiler der muliggor programmering pa et hvilket som helst sprog",
+
+    include: DocStr(
+      "include",
+      "used to include language, libraries or data structure from another file",
+    ),
+
+    // Language-specific overrides (if any)
+    // Example:
+    // library: {
+    //   __math: {
+    //     main: DocStr("math", "..."),
+    //   }
+    // }
+  }),
+);
